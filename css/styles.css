@@ -1,5 +1,5 @@
 /* CUSTOM-PROPS */
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) { */
   :root {
     --body-bg: #d5e1ef;
     --card-bg: #fff;
@@ -8,7 +8,7 @@
     --qr-bg: #2c7dfa;
     --qr-round: #3685ff;
   }
-}
+/* } */
 
 
 /* GLOBAL */
