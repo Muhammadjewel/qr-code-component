@@ -2,7 +2,8 @@ const THEME_KEY = 'theme'
 
 document.addEventListener('DOMContentLoaded', () => {
   // On the page load set the localStorage theme value to existing one if there is one. Otherwise, set it to 'light'
-  localStorage.setItem(THEME_KEY, localStorage.getItem(THEME_KEY) || 'light');
+  const defaultColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  localStorage.setItem(THEME_KEY, localStorage.getItem(THEME_KEY) || defaultColorScheme);
 
   // Change theme to dark if the localStorage has that setting on
   if (localStorage.getItem(THEME_KEY) === 'dark') {
