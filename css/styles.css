@@ -2,7 +2,7 @@
 :root {
   --body-bg: #d5e1ef;
   --card-bg: #fff;
-  --heading-color: #1f314f;
+  --dark-color: #1f314f;
   --text-color: #7d889e;
   --qr-bg: #2c7dfa;
   --qr-round: #3685ff;
@@ -26,7 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 28px;
+  padding: 32px 28px;
   margin: 0;
   font-family: "Outfit", "Arial", sans-serif;
   font-size: 15px;
@@ -98,6 +98,32 @@ select:-webkit-autofill:focus {
 }
 
 
+/* THEME-TOGGLER-BUTTON */
+.theme-toggle-button {
+  position: absolute;
+  z-index: 1;
+  right: 12px;
+  top: 12px;
+  padding: 4px 12px;
+  border: 1px solid var(--dark-color);
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: normal;
+  background-color: transparent;
+  color: var(--dark-color);
+  cursor: pointer;
+}
+
+.theme-toggle-button:hover {
+  background-color: var(--dark-color);
+  color: var(--card-bg);
+}
+
+.theme-toggle-button:active {
+  opacity: 0.6;
+}
+
+
 /* QR-CODE-CARD */
 .qr-code-card {
   flex-shrink: 0;
@@ -123,7 +149,7 @@ select:-webkit-autofill:focus {
   margin-bottom: 16px;
   font-size: 22px;
   line-height: normal;
-  color: var(--heading-color);
+  color: var(--dark-color);
 }
 
 .qr-code-card__text {
@@ -147,6 +173,11 @@ only screen and (                min-resolution: 2dppx) {
 @media only screen and (max-width: 350px) {
   body {
     padding: 16px;
+  }
+
+  .theme-toggle-button {
+    position: static;
+    align-self: flex-end;
   }
 
   .qr-code-card__heading {
