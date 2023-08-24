@@ -22,7 +22,7 @@ html {
   box-sizing: inherit;
 }
 
-body {
+.page__body {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -34,6 +34,15 @@ body {
   letter-spacing: 0.188px;
   background-color: var(--body-bg);
   color: var(--text-color);
+}
+
+.page__body--dark {
+  --body-bg: #19273F;
+  --card-bg: #1f314f;
+  --dark-color: #fff;
+  --text-color: #fff;
+  --qr-bg: var(--body-bg);
+  --qr-round: var(--body-bg);
 }
 
 img {
@@ -142,6 +151,11 @@ select:-webkit-autofill:focus {
   width: 100%;
   height: auto;
   margin-bottom: 24px;
+  color: var(--qr-bg);
+}
+
+.qr-code-card__img-circle {
+  color: var(--qr-round);
 }
 
 .qr-code-card__heading {
