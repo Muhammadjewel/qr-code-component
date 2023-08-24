@@ -171,6 +171,11 @@ only screen and (                min-resolution: 2dppx) {
 
 
 @media only screen and (max-width: 350px) {
+  :root {
+    --qr-bg: #3685ff;
+    --qr-round: #2c7dfa;
+  }
+
   body {
     padding: 16px;
   }
