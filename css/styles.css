@@ -1,14 +1,12 @@
 /* CUSTOM-PROPS */
-/* @media (prefers-color-scheme: light) { */
-  :root {
-    --body-bg: #d5e1ef;
-    --card-bg: #fff;
-    --dark-color: #1f314f;
-    --text-color: #7d889e;
-    --qr-bg: #2c7dfa;
-    --qr-round: #3685ff;
-  }
-/* } */
+:root {
+  --body-bg: #d5e1ef;
+  --card-bg: #fff;
+  --dark-color: #1f314f;
+  --text-color: #7d889e;
+  --qr-bg: #2c7dfa;
+  --qr-round: #3685ff;
+}
 
 
 /* GLOBAL */
@@ -51,32 +49,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-
-/* AUTOFILL-STYLES */
-/*input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  border-color: transparent;
-  -webkit-text-fill-color: inherit;
-  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
-}*/
-
-
-/* PLACEHOLDER-STYLES */
-/*::-webkit-input-placeholder,
-::-moz-placeholder,
-:-ms-input-placeholder,
-:-moz-placeholder {
-  color: rgba(52, 49, 61, 0.5);
-  opacity: 1;
-}*/
 
 
 /* VISUALLY-HIDDEN */
@@ -184,18 +156,6 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
 }
-
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --body-bg: #19273F;
-    --card-bg: #1f314f;
-    --dark-color: #fff;
-    --text-color: #fff;
-    --qr-bg: var(--body-bg);
-    --qr-round: var(--body-bg);
-  }
-} */
 
 
 @media only screen and (max-width: 350px) {
