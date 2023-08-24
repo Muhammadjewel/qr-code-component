@@ -186,7 +186,7 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --body-bg: #19273F;
     --card-bg: #1f314f;
@@ -195,7 +195,7 @@ only screen and (                min-resolution: 2dppx) {
     --qr-bg: var(--body-bg);
     --qr-round: var(--body-bg);
   }
-}
+} */
 
 
 @media only screen and (max-width: 350px) {
