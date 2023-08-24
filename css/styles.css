@@ -1,11 +1,13 @@
 /* CUSTOM-PROPS */
-:root {
-  --body-bg: #d5e1ef;
-  --card-bg: #fff;
-  --dark-color: #1f314f;
-  --text-color: #7d889e;
-  --qr-bg: #2c7dfa;
-  --qr-round: #3685ff;
+@media (prefers-color-scheme: light) {
+  :root {
+    --body-bg: #d5e1ef;
+    --card-bg: #fff;
+    --dark-color: #1f314f;
+    --text-color: #7d889e;
+    --qr-bg: #2c7dfa;
+    --qr-round: #3685ff;
+  }
 }
 
 
