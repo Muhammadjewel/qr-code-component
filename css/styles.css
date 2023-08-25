@@ -1,14 +1,22 @@
 /* CUSTOM-PROPS */
-/* @media (prefers-color-scheme: light) { */
-  :root {
-    --body-bg: #d5e1ef;
-    --card-bg: #fff;
-    --dark-color: #1f314f;
-    --text-color: #7d889e;
-    --qr-bg: #2c7dfa;
-    --qr-round: #3685ff;
-  }
-/* } */
+:root[data-theme="light"] {
+  --body-bg: #d5e1ef;
+  --card-bg: #fff;
+  --dark-color: #1f314f;
+  --text-color: #7d889e;
+  --qr-bg: #2c7dfa;
+  --qr-round: #3685ff;
+}
+
+
+:root[data-theme="dark"] {
+  --body-bg: #19273F;
+  --card-bg: #1f314f;
+  --dark-color: #fff;
+  --text-color: #fff;
+  --qr-bg: var(--body-bg);
+  --qr-round: var(--body-bg);
+}
 
 
 /* GLOBAL */
@@ -24,7 +32,7 @@ html {
   box-sizing: inherit;
 }
 
-.page__body {
+body {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -38,14 +46,6 @@ html {
   color: var(--text-color);
 }
 
-.page__body--dark {
-  --body-bg: #19273F;
-  --card-bg: #1f314f;
-  --dark-color: #fff;
-  --text-color: #fff;
-  --qr-bg: var(--body-bg);
-  --qr-round: var(--body-bg);
-}
 
 img {
   max-width: 100%;
@@ -186,20 +186,8 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --body-bg: #19273F;
-    --card-bg: #1f314f;
-    --dark-color: #fff;
-    --text-color: #fff;
-    --qr-bg: var(--body-bg);
-    --qr-round: var(--body-bg);
-  }
-} */
-
-
 @media only screen and (max-width: 350px) {
-  :root {
+  :root[data-theme="light"] {
     --qr-bg: #3685ff;
     --qr-round: #2c7dfa;
   }
